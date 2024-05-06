@@ -1398,7 +1398,7 @@
 @media screen and (max-width: 479px) {
   .hero-heading {
     align-self: center;
-    margin-top: -90px;
+    margin-top: -50px;
   }
 
   .hero {
