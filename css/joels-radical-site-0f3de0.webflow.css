@@ -297,6 +297,7 @@
   justify-content: center;
   align-items: stretch;
   min-height: auto;
+  margin-right: auto;
   padding: 0;
   display: flex;
   position: static;
@@ -1164,6 +1165,10 @@
   display: flex;
 }
 
+.hero-mobile {
+  display: none;
+}
+
 @media screen and (max-width: 991px) {
   .heronavmenu {
     grid-column-gap: 37px;
@@ -1219,11 +1224,24 @@
   .linkedin-icon {
     display: block;
   }
+
+  .about-subheader {
+    font-size: 24px;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .hero-heading {
+    padding-top: 60px;
     font-size: 32px;
+  }
+
+  .hero {
+    display: none;
+  }
+
+  .hero-subheading {
+    margin-top: 20px;
   }
 
   .column-3, .column-4, .column-5 {
@@ -1252,13 +1270,26 @@
   }
 
   .main-container {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0;
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .projects {
+    border-top-width: 1px;
   }
 
   .div-block-2.cardgrid {
     grid-template-rows: auto auto auto;
     grid-template-columns: 1fr;
+  }
+
+  .heronavmenu {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    padding-top: 60px;
   }
 
   .menu-button {
@@ -1290,27 +1321,48 @@
     margin-top: 13px;
     display: none;
   }
+
+  .about-subheader {
+    font-size: 18px;
+  }
+
+  .hero-mobile {
+    min-height: 100vh;
+    display: block;
+  }
 }
 
 @media screen and (max-width: 479px) {
   .hero-heading {
     align-self: center;
+    margin-top: 60px;
   }
 
   .hero {
     padding-top: 0;
     padding-bottom: 0;
+    display: none;
   }
 
   .hero-subheading {
     text-align: center;
     flex: 0 auto;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    margin-top: 0;
+    padding-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
     font-size: 18px;
+    line-height: 40px;
     text-decoration: none;
-    display: none;
+    display: flex;
   }
 
   .quick-stack {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     flex: 0 auto;
   }
 
@@ -1342,7 +1394,9 @@
   }
 
   .main-container {
-    min-height: 100vh;
+    border-top: 1px #76ff8b;
+    border-bottom: 1px #76ff8b;
+    min-height: auto;
     padding: 0 20px;
   }
 
@@ -1368,6 +1422,7 @@
     grid-template-rows: auto auto auto;
     grid-template-columns: 1fr;
     align-self: center;
+    padding-top: 60px;
   }
 
   .lottie-animation {
@@ -1395,7 +1450,13 @@
     right: -20px;
   }
 
-  .gallery-wrapper-2, .grid-2 {
+  .gallery-wrapper-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-2 {
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
     grid-template-columns: 1fr;
   }
 
@@ -1403,12 +1464,19 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .text-span, .linkedin-icon, .about {
+  .text-span {
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    display: flex;
+  }
+
+  .linkedin-icon, .about {
     display: none;
   }
 
   .about-subheader {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 34px;
   }
 
@@ -1443,6 +1511,16 @@
     margin-top: 40px;
     padding: 20px;
   }
+
+  .hero-mobile {
+    border-bottom: 1px solid #76ff8b;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+  }
 }
 
 #w-node-_3fd7de39-3356-62d5-e66a-465e5dc53740-c19339c9 {
@@ -1463,9 +1541,27 @@
   justify-self: end;
 }
 
+#w-node-_0530334b-4f3e-6052-9f2d-5975cbd36321-c19339c9 {
+  align-self: center;
+  justify-self: start;
+}
+
+#w-node-_0530334b-4f3e-6052-9f2d-5975cbd36323-c19339c9 {
+  justify-self: center;
+}
+
+#w-node-_0530334b-4f3e-6052-9f2d-5975cbd36325-c19339c9 {
+  justify-self: end;
+}
+
 #w-node-e13c2320-fe39-19bc-3cd4-e846a72445e9-c19339c9, #w-node-_0691d7ad-e58b-8cc8-1558-ba731767996d-c19339c9, #w-node-c7cfd09d-3d59-6cae-cabc-01be4f2e7770-c19339c9, #w-node-c7cfd09d-3d59-6cae-cabc-01be4f2e7768-c19339c9, #w-node-_29d86f41-fc8f-8ba9-78a8-7016995f3aed-c19339c9, #w-node-_0cc65014-9ed1-f5a6-4705-7417a1061308-c19339c9 {
   align-self: auto;
   justify-self: auto;
+}
+
+#w-node-_61b03d1b-5368-7fa6-a103-f2d7194fa0ff-c19339c9, #w-node-_61b03d1b-5368-7fa6-a103-f2d7194fa101-c19339c9 {
+  align-self: center;
+  justify-self: start;
 }
 
 #w-node-_1929ed2d-a386-dc5d-f731-ccc9863f815f-c19339c9, #w-node-_2562c570-013d-c197-35db-3e82791bb93f-c19339c9 {
@@ -1478,11 +1574,6 @@
   grid-template-columns: 1fr 1fr;
 }
 
-#w-node-_61b03d1b-5368-7fa6-a103-f2d7194fa0ff-c19339c9, #w-node-_61b03d1b-5368-7fa6-a103-f2d7194fa101-c19339c9 {
-  align-self: center;
-  justify-self: start;
-}
-
 #w-node-da6bba9f-17d5-c471-7fff-137225d0e154-c407d778, #w-node-da6bba9f-17d5-c471-7fff-137225d0e154-1bf52c36, #w-node-da6bba9f-17d5-c471-7fff-137225d0e154-7ce708b5, #w-node-da6bba9f-17d5-c471-7fff-137225d0e154-9c48247e, #w-node-da6bba9f-17d5-c471-7fff-137225d0e154-abaf3cb0, #w-node-da6bba9f-17d5-c471-7fff-137225d0e154-414768b0, #w-node-da6bba9f-17d5-c471-7fff-137225d0e154-7b8551c3 {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
@@ -1493,12 +1584,16 @@
     grid-template-columns: .5fr;
   }
 
-  #w-node-d24cff81-31cc-0e17-300c-9e661979f8da-c19339c9, #w-node-_40160087-c4d7-2700-a389-5908eb319e7f-c19339c9, #w-node-_52e2a206-c778-451e-d63e-b84f13c5a56e-c19339c9, #w-node-_1929ed2d-a386-dc5d-f731-ccc9863f815f-c19339c9, #w-node-_2562c570-013d-c197-35db-3e82791bb93f-c19339c9, #w-node-_61b03d1b-5368-7fa6-a103-f2d7194fa0ff-c19339c9 {
+  #w-node-d24cff81-31cc-0e17-300c-9e661979f8da-c19339c9, #w-node-_40160087-c4d7-2700-a389-5908eb319e7f-c19339c9, #w-node-_52e2a206-c778-451e-d63e-b84f13c5a56e-c19339c9, #w-node-_0530334b-4f3e-6052-9f2d-5975cbd36321-c19339c9, #w-node-_0530334b-4f3e-6052-9f2d-5975cbd36323-c19339c9, #w-node-_0530334b-4f3e-6052-9f2d-5975cbd36325-c19339c9, #w-node-_61b03d1b-5368-7fa6-a103-f2d7194fa0ff-c19339c9 {
     justify-self: center;
   }
 
   #w-node-_61b03d1b-5368-7fa6-a103-f2d7194fa101-c19339c9 {
     justify-self: start;
+  }
+
+  #w-node-_1929ed2d-a386-dc5d-f731-ccc9863f815f-c19339c9, #w-node-_2562c570-013d-c197-35db-3e82791bb93f-c19339c9 {
+    justify-self: center;
   }
 }
 
