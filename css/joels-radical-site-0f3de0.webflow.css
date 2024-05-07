@@ -1500,6 +1500,11 @@
     width: 100%;
   }
 
+  .menu-button.w--open {
+    color: #1c1c1c;
+    background-color: #76ff8b;
+  }
+
   .container-6 {
     max-width: none;
   }
@@ -1620,6 +1625,11 @@
   .text-block-6.email-mobile {
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .particlewrapper {
+    z-index: 0;
+    position: static;
   }
 }
 
