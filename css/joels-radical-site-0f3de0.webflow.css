@@ -145,13 +145,12 @@
 
 .navbar {
   z-index: 2147483647;
-  background-color: rgba(24, 24, 24, 0);
+  background-color: #18181800;
   border-top: 1px #000;
   border-bottom: 1px #76ff8b;
   justify-content: flex-start;
   align-items: flex-end;
   display: block;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
@@ -277,7 +276,7 @@
 
 .herobutton {
   color: #76ff8b;
-  background-color: rgba(56, 152, 236, 0);
+  background-color: #3898ec00;
   border: 1px solid #76ff8b;
   border-radius: 0;
   padding: 20px 60px;
@@ -362,13 +361,14 @@
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
-  padding-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   display: grid;
 }
 
 .card {
-  grid-column-gap: 16px;
-  grid-row-gap: 16px;
+  grid-column-gap: 31px;
+  grid-row-gap: 31px;
   border: 1px solid #76ff8b;
   border-radius: 0;
   flex-flow: column;
@@ -387,7 +387,7 @@
   color: #fff;
   margin-bottom: 0;
   padding-top: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: 400;
   line-height: 18px;
 }
@@ -397,7 +397,7 @@
   height: auto;
   margin-top: 40px;
   padding-top: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: 400;
   line-height: 18px;
 }
@@ -405,7 +405,7 @@
 .card-button {
   color: #76ff8b;
   -webkit-text-stroke-width: 0px;
-  background-color: rgba(56, 152, 236, 0);
+  background-color: #3898ec00;
   border: 1px solid #76ff8b;
   border-radius: 0;
   margin-top: auto;
@@ -450,6 +450,7 @@
 .project-thumbnail {
   aspect-ratio: 1;
   border: 1px solid #76ff8b;
+  overflow: auto;
 }
 
 .image-5 {
@@ -586,7 +587,6 @@
   justify-content: flex-start;
   align-items: flex-start;
   display: flex;
-  position: -webkit-sticky;
   position: sticky;
   top: 80px;
 }
@@ -600,7 +600,7 @@
 }
 
 .gallery-link:hover {
-  color: rgba(26, 27, 31, .8);
+  color: #1a1b1fcc;
 }
 
 .gallery-link.w--current {
@@ -627,7 +627,7 @@
 }
 
 .gallery-slide {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #0000;
   height: auto;
 }
 
@@ -939,7 +939,7 @@
 }
 
 .slide-pandakitori1 {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: #fff0;
   background-image: url('../images/Slider1_2.jpg');
   background-position: 50%;
   background-size: cover;
@@ -1116,7 +1116,7 @@
 .paragraph-5 {
   color: #fff;
   padding-top: 40px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 .education {
@@ -1140,7 +1140,7 @@
 .text-block-4, .text-block-5 {
   color: #fff;
   align-self: flex-end;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 .grid-3 {
@@ -1634,8 +1634,7 @@
 }
 
 #w-node-_0530334b-4f3e-6052-9f2d-5975cbd36321-c19339c9 {
-  align-self: center;
-  justify-self: start;
+  place-self: center start;
 }
 
 #w-node-_0530334b-4f3e-6052-9f2d-5975cbd36323-c19339c9 {
@@ -1652,8 +1651,7 @@
 }
 
 #w-node-d24cff81-31cc-0e17-300c-9e661979f8da-c19339c9 {
-  align-self: center;
-  justify-self: start;
+  place-self: center start;
 }
 
 #w-node-_40160087-c4d7-2700-a389-5908eb319e7f-c19339c9 {
@@ -1664,19 +1662,16 @@
   justify-self: end;
 }
 
-#w-node-e13c2320-fe39-19bc-3cd4-e846a72445e9-c19339c9, #w-node-_0691d7ad-e58b-8cc8-1558-ba731767996d-c19339c9, #w-node-c7cfd09d-3d59-6cae-cabc-01be4f2e7770-c19339c9, #w-node-c7cfd09d-3d59-6cae-cabc-01be4f2e7768-c19339c9, #w-node-_29d86f41-fc8f-8ba9-78a8-7016995f3aed-c19339c9, #w-node-_0cc65014-9ed1-f5a6-4705-7417a1061308-c19339c9 {
-  align-self: auto;
-  justify-self: auto;
+#w-node-_29d86f41-fc8f-8ba9-78a8-7016995f3aed-c19339c9, #w-node-_0cc65014-9ed1-f5a6-4705-7417a1061308-c19339c9, #w-node-d3e4d792-4bb6-6edc-e1c9-ab54ded61f2c-c19339c9, #w-node-_118cebb3-8830-45d4-5467-b11492e8687b-c19339c9, #w-node-_81d58e9c-4ef7-f125-7d7c-810ceeb0528c-c19339c9, #w-node-_72c6e552-46bd-5152-4c5f-709961eb86f3-c19339c9, #w-node-_72c6e552-46bd-5152-4c5f-709961eb86fd-c19339c9, #w-node-_72c6e552-46bd-5152-4c5f-709961eb8711-c19339c9, #w-node-c597f13c-db65-d926-0931-c33175346b79-c19339c9, #w-node-_72c6e552-46bd-5152-4c5f-709961eb86e9-c19339c9 {
+  place-self: auto;
 }
 
 #w-node-_61b03d1b-5368-7fa6-a103-f2d7194fa0ff-c19339c9, #w-node-_61b03d1b-5368-7fa6-a103-f2d7194fa101-c19339c9 {
-  align-self: center;
-  justify-self: start;
+  place-self: center start;
 }
 
 #w-node-_1929ed2d-a386-dc5d-f731-ccc9863f815f-c19339c9, #w-node-_2562c570-013d-c197-35db-3e82791bb93f-c19339c9 {
-  align-self: center;
-  justify-self: center;
+  place-self: center;
 }
 
 #w-node-b0a55ffe-15dc-9944-0025-364e0cf9f81c-c19339c9 {
@@ -1684,12 +1679,12 @@
   grid-template-columns: 1fr 1fr;
 }
 
-#w-node-_75a2b135-858b-ec4c-af63-6d092f295ff8-c407d778, #w-node-_306f77d4-ba55-6824-88e2-c81be81c1a76-c407d778, #w-node-_0a255d56-b7b4-fbbe-2e3c-bef01623ccd9-c407d778, #w-node-_5b1c8727-aa82-90db-479a-8505fa438c8c-c407d778, #w-node-eddc7b13-6aac-d248-b2e6-b518341e9eeb-c407d778, #w-node-_07d6280a-51ad-5a52-0961-889c334d4444-1bf52c36, #w-node-_45b548be-8429-55f2-f037-bb0c62223387-7ce708b5, #w-node-_8a1b064a-49be-f662-8cb2-8f1e96a98932-9c48247e, #w-node-a7d44fe8-9e1c-2604-0f0c-c55421b01965-9c48247e, #w-node-_1e3f2f0c-ca42-91d0-f750-641bb8860da0-abaf3cb0, #w-node-c1aaef07-fa48-9283-ffdf-d291bbc1a189-414768b0, #w-node-f8a3f384-9206-b3ba-89dd-e443b94266f3-7b8551c3 {
+#w-node-_75a2b135-858b-ec4c-af63-6d092f295ff8-c407d778, #w-node-_306f77d4-ba55-6824-88e2-c81be81c1a76-c407d778, #w-node-_0a255d56-b7b4-fbbe-2e3c-bef01623ccd9-c407d778, #w-node-_5b1c8727-aa82-90db-479a-8505fa438c8c-c407d778, #w-node-eddc7b13-6aac-d248-b2e6-b518341e9eeb-c407d778, #w-node-_07d6280a-51ad-5a52-0961-889c334d4444-1bf52c36, #w-node-_45b548be-8429-55f2-f037-bb0c62223387-7ce708b5, #w-node-_8a1b064a-49be-f662-8cb2-8f1e96a98932-9c48247e, #w-node-a7d44fe8-9e1c-2604-0f0c-c55421b01965-9c48247e, #w-node-_1e3f2f0c-ca42-91d0-f750-641bb8860da0-abaf3cb0, #w-node-c1aaef07-fa48-9283-ffdf-d291bbc1a189-414768b0, #w-node-f8a3f384-9206-b3ba-89dd-e443b94266f3-7b8551c3, #w-node-_75a2b135-858b-ec4c-af63-6d092f295ff8-9dacc074, #w-node-_306f77d4-ba55-6824-88e2-c81be81c1a76-9dacc074, #w-node-_0a255d56-b7b4-fbbe-2e3c-bef01623ccd9-9dacc074, #w-node-_5b1c8727-aa82-90db-479a-8505fa438c8c-9dacc074, #w-node-eddc7b13-6aac-d248-b2e6-b518341e9eeb-9dacc074, #w-node-_75a2b135-858b-ec4c-af63-6d092f295ff8-681a07d0, #w-node-_306f77d4-ba55-6824-88e2-c81be81c1a76-681a07d0, #w-node-_0a255d56-b7b4-fbbe-2e3c-bef01623ccd9-681a07d0, #w-node-_5b1c8727-aa82-90db-479a-8505fa438c8c-681a07d0, #w-node-eddc7b13-6aac-d248-b2e6-b518341e9eeb-681a07d0, #w-node-_75a2b135-858b-ec4c-af63-6d092f295ff8-47cf0cba, #w-node-_306f77d4-ba55-6824-88e2-c81be81c1a76-47cf0cba, #w-node-_0a255d56-b7b4-fbbe-2e3c-bef01623ccd9-47cf0cba, #w-node-_75a2b135-858b-ec4c-af63-6d092f295ff8-9a235fb1, #w-node-_306f77d4-ba55-6824-88e2-c81be81c1a76-9a235fb1, #w-node-_0a255d56-b7b4-fbbe-2e3c-bef01623ccd9-9a235fb1 {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
 @media screen and (max-width: 767px) {
-  #w-node-_75a2b135-858b-ec4c-af63-6d092f295ff8-c407d778, #w-node-_306f77d4-ba55-6824-88e2-c81be81c1a76-c407d778, #w-node-_0a255d56-b7b4-fbbe-2e3c-bef01623ccd9-c407d778, #w-node-_5b1c8727-aa82-90db-479a-8505fa438c8c-c407d778, #w-node-eddc7b13-6aac-d248-b2e6-b518341e9eeb-c407d778 {
+  #w-node-_75a2b135-858b-ec4c-af63-6d092f295ff8-c407d778, #w-node-_306f77d4-ba55-6824-88e2-c81be81c1a76-c407d778, #w-node-_0a255d56-b7b4-fbbe-2e3c-bef01623ccd9-c407d778, #w-node-_5b1c8727-aa82-90db-479a-8505fa438c8c-c407d778, #w-node-eddc7b13-6aac-d248-b2e6-b518341e9eeb-c407d778, #w-node-_75a2b135-858b-ec4c-af63-6d092f295ff8-9dacc074, #w-node-_306f77d4-ba55-6824-88e2-c81be81c1a76-9dacc074, #w-node-_0a255d56-b7b4-fbbe-2e3c-bef01623ccd9-9dacc074, #w-node-_5b1c8727-aa82-90db-479a-8505fa438c8c-9dacc074, #w-node-eddc7b13-6aac-d248-b2e6-b518341e9eeb-9dacc074, #w-node-_75a2b135-858b-ec4c-af63-6d092f295ff8-681a07d0, #w-node-_306f77d4-ba55-6824-88e2-c81be81c1a76-681a07d0, #w-node-_0a255d56-b7b4-fbbe-2e3c-bef01623ccd9-681a07d0, #w-node-_5b1c8727-aa82-90db-479a-8505fa438c8c-681a07d0, #w-node-eddc7b13-6aac-d248-b2e6-b518341e9eeb-681a07d0, #w-node-_75a2b135-858b-ec4c-af63-6d092f295ff8-47cf0cba, #w-node-_306f77d4-ba55-6824-88e2-c81be81c1a76-47cf0cba, #w-node-_0a255d56-b7b4-fbbe-2e3c-bef01623ccd9-47cf0cba, #w-node-_75a2b135-858b-ec4c-af63-6d092f295ff8-9a235fb1, #w-node-_306f77d4-ba55-6824-88e2-c81be81c1a76-9a235fb1, #w-node-_0a255d56-b7b4-fbbe-2e3c-bef01623ccd9-9a235fb1 {
     grid-area: span 1 / span 1 / span 1 / span 1;
   }
 }
